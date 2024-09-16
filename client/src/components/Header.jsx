@@ -11,12 +11,14 @@ export default function Header() {
         to='/'
         className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'
       >
-        
-        {/* <div className='b '> */}
-          <span className='text-blue-900 font-bold text-2xl'>
-            BlogWave
-          </span>
-        {/* /</div> */}
+        <span className='text-2xl font-bold font-serif tracking-wide text-gray-800'>
+              <span className='relative'>
+                <span className='text-blue-600'>Blog</span>
+                <span className='absolute -bottom-1 left-0 w-full h-1 bg-pink-500 rounded-md'></span>
+              </span>
+              <span className='text-pink-600 ml-1'>Wave</span>
+            </span>
+       
       </Link>
       <form className='relative hidden lg:flex items-center flex-grow mx-4'>
         <input
