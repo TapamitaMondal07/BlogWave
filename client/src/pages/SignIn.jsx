@@ -1,9 +1,9 @@
 import React from 'react'
 
-function SignIn() {
+function Signin() {
   return (
-    <div>SignIn</div>
+    <div>Signin</div>
   )
 }
 
-export default SignIn
+export default Signin
