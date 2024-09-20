@@ -53,6 +53,7 @@ export default function Signup() {
               <span className='text-pink-600 ml-1'>Wave</span>
             </span>
           </Link>
+          
         </div>
         {/* right */}
         <div className='flex-1 pl-12'>
@@ -67,7 +68,7 @@ export default function Signup() {
             </div>
             <div>
               <Label value='Your password' />
-              <TextInput type='password' placeholder='Password' id='password' onChange={handleChange} />
+              <TextInput type='password' placeholder='******' id='password' onChange={handleChange} />
             </div>
             <Button className='bg-gradient-to-r from-blue-500 to-pink-500 hover:from-pink-500 hover:to-blue-500 text-white font-bold py-2 px-4 rounded' type='submit' disabled={loading}>
               {loading ? (
