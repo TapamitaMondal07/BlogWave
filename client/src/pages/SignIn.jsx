@@ -1,6 +1,7 @@
 import { Button, Label, TextInput, Alert, Spinner } from 'flowbite-react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import OAuth from '../components/OAuth';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   signInStart,
@@ -84,6 +85,7 @@ export default function Signin() {
               'Sign In'
               )}
             </Button>
+            <OAuth/>
           </form>
           <div className="flex justify-center text-sm mt-5">
             <span>Don't have an account?</span>
