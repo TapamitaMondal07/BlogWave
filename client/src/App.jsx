@@ -8,7 +8,10 @@ import Dashboard from './pages/Dashboard.jsx'
 import Projects from './pages/Projects.jsx'
 
 import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
+
 import { TextInput } from 'flowbite-react'
+
 
 function App() {
   return (
@@ -22,6 +25,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/projects" element={<Projects/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
     
   )
