@@ -9,6 +9,7 @@ import Projects from './pages/Projects.jsx'
 
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
+import PrivateRoute from './components/PrivateRoute.jsx'
 
 import { TextInput } from 'flowbite-react'
 
@@ -22,7 +23,9 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/sign-in" element={<Signin/>}/>
         <Route path="/sign-up" element={<Signup/>}/>
-        <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route element={<PrivateRoute/>}>
+          <Route path="/dashboard" element={<Dashboard/>}/>
+        </Route>
         <Route path="/projects" element={<Projects/>}/>
       </Routes>
       <Footer/>
