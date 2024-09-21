@@ -14,7 +14,7 @@ export default function DashSidebar() {
     }
   }, [location.search]);
   return (
-    <Sidebar className='h-screen sticky top-0 w-56 md:w-48'>
+    <Sidebar className='w-full md:w-56'>
       <Sidebar.Items>
         <Sidebar.ItemGroup>
           <Link to='/dashboard?tab=profile'>
@@ -23,6 +23,7 @@ export default function DashSidebar() {
               icon={HiUser}
               label={'User'}
               labelColor='dark'
+              as='div'
             >
               Profile
             </Sidebar.Item>
